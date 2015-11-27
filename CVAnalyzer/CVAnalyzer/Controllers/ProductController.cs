@@ -48,22 +48,10 @@ namespace CVAnalyzer.Controllers
         {
 
             var product = _productService.GetProductByProductId(productIdReqViewModel.ProductId);
-            var productResViewModel = new ProductResViewModel
-                                                          {
-                                                              AverageRating = _ratingService.GetAverageRating(product.ProductId),
-                                                              Category = product.Category,
-                                                              District = product.District,
-                                                              ExpiryDate = product.ExpiryDate,
-                                                              FarmerId = product.FarmerId,
-                                                              Name = product.Name,
-                                                              PhotoUrl = product.PhotoUrl,
-                                                              PriceRangeFrom = product.PriceRangeFrom,
-                                                              PriceRangeTo = product.PriceRangeTo,
-                                                              ProductId = product.ProductId,
-                                                              Subcategory = product.Subcategory
-                                                          };
+            var productResViewModel = GetProductResViewModel(product);
             return Ok(productResViewModel);
         }
+
 
         [Route("product/getall")]
         [HttpPost]
@@ -74,7 +62,7 @@ namespace CVAnalyzer.Controllers
 
             foreach (var product in products)
             {
-                var productResViewModel = new ProductResViewModel
+                var productResViewModel = GetProductResViewModel(product);/*new ProductResViewModel
                 {
                     AverageRating = _ratingService.GetAverageRating(product.ProductId),
                     Category = product.Category,
@@ -87,10 +75,49 @@ namespace CVAnalyzer.Controllers
                     PriceRangeTo = product.PriceRangeTo,
                     ProductId = product.ProductId,
                     Subcategory = product.Subcategory
-                };
+                };*/
                 productResViewModels.Add(productResViewModel);
             }
             return Ok(productResViewModels);
+        }
+
+
+        [Route("product/getAllByDistrictAndProductName")]
+        [HttpPost]
+        public IHttpActionResult GetAllProductsByDistrictAndProductName(DistrictAndProductNameReqViewModel districtAndProductNameViewModel)
+        {
+           var products =_productService.GetProductsByDistrictAndProductName(districtAndProductNameViewModel.DistrictName,
+                                                                districtAndProductNameViewModel.ProductName,
+                                                                districtAndProductNameViewModel.Page,
+                                                                districtAndProductNameViewModel.Size);
+
+            var productResViewModels = new List<ProductResViewModel>();
+            foreach (var product in products)
+            {
+                productResViewModels.Add(GetProductResViewModel(product));
+            }
+
+            return Ok(productResViewModels);
+        }
+
+
+        private ProductResViewModel GetProductResViewModel(Product product)
+        {
+            var productResViewModel = new ProductResViewModel
+            {
+                AverageRating = _ratingService.GetAverageRating(product.ProductId),
+                Category = product.Category,
+                District = product.District,
+                ExpiryDate = product.ExpiryDate,
+                FarmerId = product.FarmerId,
+                Name = product.Name,
+                PhotoUrl = product.PhotoUrl,
+                PriceRangeFrom = product.PriceRangeFrom,
+                PriceRangeTo = product.PriceRangeTo,
+                ProductId = product.ProductId,
+                Subcategory = product.Subcategory
+            };
+            return productResViewModel;
         }
 
     }

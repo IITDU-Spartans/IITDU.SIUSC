@@ -122,6 +122,12 @@ function Remote($http, $window, serverUrl) {
         "AverageRating": "3.5"
     }];
 
+
+    this.getAllProductByDistrictAndProductName =  function(districtAndProductNameModel){
+        var url = serverUrl + 'product/getAllByDistrictAndProductName';
+        return $http.post(serverUrl, districtAndProductNameModel);
+    }
+
 };
 
 app.service('remote', ['$http', '$window', 'serverUrl', Remote]);
