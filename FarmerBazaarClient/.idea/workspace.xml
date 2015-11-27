@@ -62,6 +62,12 @@
         </entry>
       </file>
 <<<<<<< HEAD
+      <file leaf-file-name="auth-controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1394">
+=======
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +79,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
 >>>>>>> 6b0aefeab43698ff65ac7e33fc29d5de94902afc
+>>>>>>> 1f9558814d8b32489f39705985854bf4482ea091
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="signup.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="60" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.7562724" vertical-offset="564" max-vertical-offset="1343">
+=======
 <<<<<<< HEAD
       <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partial_views/product.html">
@@ -100,6 +113,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="62" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-20.153847" vertical-offset="530" max-vertical-offset="1224">
 >>>>>>> 6b0aefeab43698ff65ac7e33fc29d5de94902afc
+>>>>>>> 1f9558814d8b32489f39705985854bf4482ea091
               <folding />
             </state>
           </provider>
@@ -197,9 +211,12 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/services/uuid-service.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/partial_views/signup.html" />
         <option value="$PROJECT_DIR$/app/controllers/auth-controller.js" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/partial_views/signup.html" />
+=======
 >>>>>>> 6b0aefeab43698ff65ac7e33fc29d5de94902afc
+>>>>>>> 1f9558814d8b32489f39705985854bf4482ea091
       </list>
     </option>
   </component>
@@ -771,6 +788,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1394">
+=======
     <entry file="file://$PROJECT_DIR$/bower_components/ui-bootstrap-tpls-0.12.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -804,11 +826,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+>>>>>>> 1f9558814d8b32489f39705985854bf4482ea091
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="60" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.7562724" vertical-offset="564" max-vertical-offset="1343">
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.192307" vertical-offset="387" max-vertical-offset="1105">
           <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
@@ -900,6 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
 >>>>>>> 6b0aefeab43698ff65ac7e33fc29d5de94902afc
+>>>>>>> 1f9558814d8b32489f39705985854bf4482ea091
           <folding />
         </state>
       </provider>
