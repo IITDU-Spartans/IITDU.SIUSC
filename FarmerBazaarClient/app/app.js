@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: 'app/partial_views/middle.html'
+            templateUrl: 'app/partial_views/home.html'
         })
         .state('page_not_found', {
             url: '/page_not_found',
@@ -21,12 +21,12 @@ app.config(function($stateProvider, $urlRouterProvider){
             url: '/signup',
             templateUrl: 'app/partial_views/signup.html'
         })
-        .state('forum', {
-            url: '/forum',
-            templateUrl: 'app/partial_views/forum.html'
+        .state('signin', {
+            url: '/signin',
+            templateUrl: 'app/partial_views/signin.html'
         })
-        .state('products', {
-            url: '/products',
-            templateUrl: 'app/partial_views/products.html'
+        .state('editprofile', {
+            url: '/edit',
+            templateUrl: 'app/partial_views/forum.html'
         });
 });
