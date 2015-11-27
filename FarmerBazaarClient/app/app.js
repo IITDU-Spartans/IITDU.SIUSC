@@ -21,12 +21,16 @@ app.config(function($stateProvider, $urlRouterProvider){
             url: '/signup',
             templateUrl: 'app/partial_views/signup.html'
         })
+        .state('signin', {
+            url: '/signin',
+            templateUrl: 'app/partial_views/signin.html'
+        })
         .state('forum', {
             url: '/forum',
             templateUrl: 'app/partial_views/forum.html'
         })
-        .state('products', {
-            url: '/products',
-            templateUrl: 'app/partial_views/products.html'
+        .state('controlPanel', {
+            url: '/controlPanel',
+            templateUrl: 'app/partial_views/control_panel.html'
         });
 });
