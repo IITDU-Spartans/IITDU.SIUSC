@@ -5,9 +5,8 @@ using System.Web;
 
 namespace CVAnalyzer.ViewModels
 {
-    public class LoggedInUserInfoViewModel
+    public class ProductIdReqViewModel
     {
-        public int UserId { get; set; }
-        public string TokenValue { get; set; }
+        public int ProductId { get; set; }
     }
 }

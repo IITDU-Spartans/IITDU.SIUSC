@@ -21,6 +21,7 @@ namespace CVAnalyzer.Services
             if (_ratingRepository.HasRated(rating.FarmerId, rating.FarmerId))
                 return false;
             _ratingRepository.AddRating(rating);
+            return true;
         }
 
         public double GetAverageRating(int productId)

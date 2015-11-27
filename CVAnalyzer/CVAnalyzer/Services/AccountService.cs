@@ -37,7 +37,7 @@ namespace CVAnalyzer.Services
             if (!farmer.Password.Equals(farmerSigninInfo.Password))
                 return null;
 
-            return _authService.CreateAuthToken(farmerSigninInfo.FarmerId);
+            return _authService.CreateAuthToken(farmer.FarmerId);
         }
 
         public bool Signout(Farmer farmer)

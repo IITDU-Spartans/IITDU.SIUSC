@@ -5,9 +5,9 @@ using System.Web;
 
 namespace CVAnalyzer.ViewModels
 {
-    public class SigninInfoViewModel
+    public class LoginResViewModel
     {
-        public String Email { get; set; }
-        public String Password { get; set; }
+        public string TokenValue { get; set; }
+        public int FarmerId { get; set; }
     }
 }

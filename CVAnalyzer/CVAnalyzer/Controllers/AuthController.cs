@@ -1,6 +1,5 @@
 ﻿using System.Web.Http.Results;
 using CVAnalyzer.Authentication.service;
-using CVAnalyzer.ViewModels;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
