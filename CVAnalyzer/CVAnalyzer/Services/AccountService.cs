@@ -51,6 +51,10 @@ namespace CVAnalyzer.Services
             return _farmerRepository.UpdateFarmer(farmer);
         }
 
+        public bool DeleteAccount(string mobileNumber)
+        {
+            return _farmerRepository.DeleteFarmer(mobileNumber);
+        }
 
     }
 }
