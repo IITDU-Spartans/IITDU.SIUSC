@@ -83,11 +83,32 @@ namespace CVAnalyzer.Controllers
                              {
                                  FarmerId = farmerIdReqViewModel.FarmerId
                              };
-            if(_accountService.Signout(farmer))
+            if (_accountService.Signout(farmer))
             {
-                return Ok("Signout");   
+                return Ok("Signout");
             }
             return BadRequest("Cannot signout");
+        }
+
+        [Route("account/edit")]
+        [HttpPost]
+        public IHttpActionResult EditAccount(RegisterUpdateReqViewModel registerUpdateReqViewModel)
+        {
+            var farmer = new Farmer
+            {
+                FarmerId = registerUpdateReqViewModel.FarmerId,
+                Address = registerUpdateReqViewModel.Address,
+                FullName = registerUpdateReqViewModel.FullName,
+                MobileNumber = registerUpdateReqViewModel.MobileNumber,
+                Password = registerUpdateReqViewModel.Password,
+                PhotoUrl = registerUpdateReqViewModel.PhotoUrl
+            };
+
+            if (_accountService.UpdateAccount(farmer))
+            {
+                return Ok("updated");
+            }
+            return BadRequest("Can't update");
         }
 
 

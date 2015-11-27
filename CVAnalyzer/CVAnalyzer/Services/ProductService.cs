@@ -30,5 +30,10 @@ namespace CVAnalyzer.Services
            return _productRepository.GetAllProduct().Skip(currentPage*size).Take(size).ToList();
         }
 
+         public Product GetProductByProductId(int productId)
+         {
+             return _productRepository.GetProductByProductId(productId);
+         }
+
     }
 }

@@ -99,6 +99,7 @@
     <Compile Include="Authentication\Utility\TokenAuthorizeAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.cs" />
     <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.Designer.cs">
       <DependentUpon>201511272127489_ProductAndRatingModelAdded.cs</DependentUpon>
@@ -133,6 +134,7 @@
     <Compile Include="ViewModels\ProductViewModel.cs" />
     <Compile Include="ViewModels\RegisterReqViewModel.cs" />
     <Compile Include="ViewModels\RegisterResViewModel.cs" />
+    <Compile Include="ViewModels\RegisterUpdateReqViewModel.cs" />
     <Compile Include="ViewModels\SignoutReqViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
