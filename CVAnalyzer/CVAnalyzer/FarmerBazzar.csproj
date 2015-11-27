@@ -114,6 +114,7 @@
     <Compile Include="Repositories\FarmerRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RatingRepository.cs" />
+    <Compile Include="Services\AccountService.cs" />
     <Compile Include="ViewModels\LoggedInUserInfoViewModel.cs" />
     <Compile Include="ViewModels\SigninInfoViewModel.cs" />
     <Compile Include="ViewModels\SignupInfoViewModel.cs" />
@@ -129,7 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201511272127489_ProductAndRatingModelAdded.resx">
