@@ -1,0 +1,21 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:AppContext.cs" caret="407" fromTop="12" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Migrations/f:201511272127489_ProductAndRatingModelAdded.cs" caret="22" fromTop="0" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Product.cs" caret="622" fromTop="18" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:AuthController.cs" caret="72" fromTop="1" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:service/f:AuthService.cs" caret="638" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:RatingRepository.cs" caret="1575" fromTop="23" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:ProductRepository.cs" caret="1172" fromTop="17" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:Utility/f:TokenAuthorizeAttribute.cs" caret="1588" fromTop="23" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Farmer.cs" caret="120" fromTop="5" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:FileUploadController.cs" caret="412" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:AccountController.cs" caret="3038" fromTop="66" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:AuthController.cs" caret="72" fromTop="1" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:ProductRepository.cs" caret="1267" fromTop="18" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:RatingRepository.cs" caret="1457" fromTop="21" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:FileUploadController.cs" caret="401" fromTop="9" />
+  </RecentEdits>
+</RecentFiles>

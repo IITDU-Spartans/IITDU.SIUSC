@@ -1,7 +1,7 @@
 /**
  * Created by Anik 0422 on 10/25/15.
  */
-var app = angular.module("app", ['ui.router']);
+var app = angular.module("app", ['ui.router', 'angularFileUpload']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: 'app/partial_views/middle.html'
+            templateUrl: 'app/partial_views/home.html'
         })
         .state('page_not_found', {
             url: '/page_not_found',
@@ -25,12 +25,8 @@ app.config(function($stateProvider, $urlRouterProvider){
             url: '/signin',
             templateUrl: 'app/partial_views/signin.html'
         })
-        .state('forum', {
-            url: '/forum',
+        .state('editprofile', {
+            url: '/edit',
             templateUrl: 'app/partial_views/forum.html'
-        })
-        .state('controlPanel', {
-            url: '/controlPanel',
-            templateUrl: 'app/partial_views/control_panel.html'
         });
 });

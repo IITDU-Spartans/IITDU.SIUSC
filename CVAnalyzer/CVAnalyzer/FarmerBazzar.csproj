@@ -54,6 +54,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Web.Cors">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -96,10 +97,18 @@
     <Compile Include="Authentication\Model\AuthToken.cs" />
     <Compile Include="Authentication\service\AuthService.cs" />
     <Compile Include="Authentication\Utility\TokenAuthorizeAttribute.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\FileUploadController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RatingController.cs" />
     <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.cs" />
     <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.Designer.cs">
       <DependentUpon>201511272127489_ProductAndRatingModelAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511272238296_DatabaseUpdated.cs" />
+    <Compile Include="Migrations\201511272238296_DatabaseUpdated.Designer.cs">
+      <DependentUpon>201511272238296_DatabaseUpdated.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
@@ -115,9 +124,22 @@
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RatingRepository.cs" />
     <Compile Include="Services\AccountService.cs" />
-    <Compile Include="ViewModels\LoggedInUserInfoViewModel.cs" />
-    <Compile Include="ViewModels\SigninInfoViewModel.cs" />
-    <Compile Include="ViewModels\SignupInfoViewModel.cs" />
+    <Compile Include="Services\FarmerService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\RatingService.cs" />
+    <Compile Include="ViewModels\FarmerIdReqViewModel.cs" />
+    <Compile Include="ViewModels\LoginReqViewModel.cs" />
+    <Compile Include="ViewModels\LoginResViewModel.cs" />
+    <Compile Include="ViewModels\ProductAddResViewModel.cs" />
+    <Compile Include="ViewModels\ProductGetAllReqModel.cs" />
+    <Compile Include="ViewModels\ProductIdReqViewModel.cs" />
+    <Compile Include="ViewModels\ProductResViewModel.cs" />
+    <Compile Include="ViewModels\ProductViewModel.cs" />
+    <Compile Include="ViewModels\RatingViewModel.cs" />
+    <Compile Include="ViewModels\RegisterReqViewModel.cs" />
+    <Compile Include="ViewModels\RegisterResViewModel.cs" />
+    <Compile Include="ViewModels\RegisterUpdateReqViewModel.cs" />
+    <Compile Include="ViewModels\SignoutReqViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -130,10 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201511272127489_ProductAndRatingModelAdded.resx">
       <DependentUpon>201511272127489_ProductAndRatingModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511272238296_DatabaseUpdated.resx">
+      <DependentUpon>201511272238296_DatabaseUpdated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -18,9 +18,10 @@ namespace CVAnalyzer.Services
 
         public bool RateProduct(Rating rating)
         {
-            if (_ratingRepository.HasRated(rating.FarmerId, rating.FarmerId))
+            if (_ratingRepository.HasRated(rating.FarmerId, rating.ProductId))
                 return false;
             _ratingRepository.AddRating(rating);
+            return true;
         }
 
         public double GetAverageRating(int productId)

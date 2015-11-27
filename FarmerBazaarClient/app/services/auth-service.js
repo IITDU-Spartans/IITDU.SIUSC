@@ -13,7 +13,7 @@ app.service('authService', ['$window', 'remote', function($window, remote){
 
     this.logOut = function(){
         var logoutModel = {};
-        logoutModel.FarmerId = this.getUserId();
+        logoutModel.FarmerId = this.getFarmerId();
         return remote.logOut(logoutModel);
     };
 
@@ -24,20 +24,20 @@ app.service('authService', ['$window', 'remote', function($window, remote){
         return $window.localStorage.authToken;
     };
 
-    this.setUserId = function(userId){
-        $window.localStorage.userId = userId;
+    this.setFarmerId = function(farmerId){
+        $window.localStorage.farmerId = farmerId;
     };
-    this.getUserId = function(){
-        return $window.localStorage.userId;
+    this.getFarmerId = function(){
+        return $window.localStorage.farmerId;
     };
 
     this.setUser = function(loggedInUser){
-        $window.localStorage.userId = loggedInUser.UserId;
+        $window.localStorage.farmerId = loggedInUser.FarmerId;
         $window.localStorage.authToken = loggedInUser.TokenValue;
     };
     this.getUser = function(){
         var user = {};
-        user.userId = $window.localStorage.userId;
+        user.farmerId = $window.localStorage.farmerId;
         user.tokenValue = $window.localStorage.authToken;
         return user;
     };
@@ -53,8 +53,8 @@ app.service('authService', ['$window', 'remote', function($window, remote){
             return false;
     };
 
-    this.isValidUser = function(loggedInUserId, ownerId){
-        if(loggedInUserId == ownerId)
+    this.isValidUser = function(loggedInFarmerId, ownerId){
+        if(loggedInFarmerId == ownerId)
             return true;
         else
             return false;

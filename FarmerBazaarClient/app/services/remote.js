@@ -8,34 +8,34 @@ function Remote($http, $window, serverUrl) {
     this.signIn = function (loginModel) {
         console.log("login");
         console.log(loginModel);
-        $window.localStorage.userId = 1;
-        $window.localStorage.authToken = "token";
+        //$window.localStorage.userId = 1;
+        //$window.localStorage.authToken = "token";
         var url = serverUrl + 'account/signin';
-        //return $http.post(url, loginModel);
+        return $http.post(url, loginModel);
     };
 
     this.signUp = function (registerModel) {
         console.log("signup");
         console.log(registerModel);
-        $window.localStorage.userId = 1;
-        $window.localStorage.authToken = "token";
+      //  $window.localStorage.userId = 1;
+      //  $window.localStorage.authToken = "token";
         var url = serverUrl + 'account/signup';
-        //return $http.post(url, registerModel);
+        return $http.post(url, registerModel);
     };
 
     this.logOut = function (logoutModel) {
         console.log("logout");
         console.log(logoutModel);
-        $window.localStorage.clear();
+       // $window.localStorage.clear();
         var url = serverUrl + 'account/logout';
-        //return $http.post(url, logoutModel);
+        return $http.post(url, logoutModel);
     };
 
     this.editAccount = function (editModel) {
         console.log("edit account");
         console.log(editModel);
         var url = serverUrl + 'account/edit';
-        //return $http.post(url, editModel);
+        return $http.post(url, editModel);
     }
 
 };

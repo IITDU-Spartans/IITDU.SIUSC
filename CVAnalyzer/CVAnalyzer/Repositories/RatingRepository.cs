@@ -11,10 +11,12 @@ namespace CVAnalyzer.Repositories
     public class RatingRepository
     {
         private AppContext _appContext;
+        private ProductRepository _productRepository;
 
         public RatingRepository()
         {
             _appContext = new AppContext();
+            _productRepository = new ProductRepository();
         }
 
         public int AddRating(Rating rating)
@@ -43,6 +45,9 @@ namespace CVAnalyzer.Repositories
 
         public double GetAverageRating(int productId)
         {
+            if (_appContext.Ratings.Count(r => r.ProductId.Equals(productId)) == 0)
+                return 0.0;
+
             return _appContext.Ratings.Where(r => r.ProductId.Equals(productId)).Average(r => r.Value);
         }
 

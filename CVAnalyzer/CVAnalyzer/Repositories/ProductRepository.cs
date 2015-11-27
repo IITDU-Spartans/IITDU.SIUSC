@@ -41,6 +41,11 @@ namespace CVAnalyzer.Repositories
             return _appContext.Products.ToList();
         }
 
+        public Product GetProductByProductId(int productId)
+        {
+            return _appContext.Products.FirstOrDefault(p => p.ProductId.Equals(productId));
+        }
+
 
     }
 }
