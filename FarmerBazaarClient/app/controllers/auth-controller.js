@@ -1,33 +1,44 @@
 /**
  * Created by Anik 0422 on 10/25/15.
  */
-app.controller('AuthController', ['$scope', 'authService', '$state', function ($scope, authService, $state) {
+app.controller('AuthController', ['$scope', 'authService', '$state', 'FileUploader', 'uuidService', function ($scope, authService, $state, FileUploader, uuidService) {
+
+    $scope.uploader = new FileUploader({
+        url: 'http://localhost:3444/file/upload'
+    });
 
     $scope.signIn = function (loginModel) {
-        
+
         authService.signIn(loginModel).success(function (responseData) {
             authService.setUser(responseData);
             $state.go('home');
             toastr.success("You are successfully logged in.");
             //console.log("Successfully logged in.")
         }).error(function () {
-            toastr.info("Wrong email or password. Please try again.")
-                //console.log("Wrong email or password. Please try again.")
-        });
+                toastr.info("Wrong email or password. Please try again.")
+                //console.log("Wrong email or password. Please try again.")s
+            });
     };
     $scope.signUp = function (registerModel) {
+
+        registerModel.PhotoUrl = $scope.uploader.queue[0].file.name;
+    //    $scope.uploader.queue[0].file.name = registerModel.PhotoUrl;
+
         if (registerModel.Password == registerModel.ConfirmPassword) {
-            authService.signUp(registerModel).success(function(responseData){
-                authService.setUser(responseData);
-                $state.go('home');
-                toastr.success("Successfully registered.");
-                //console.log("Successfully registered.");
-            }).error(function(){
-                toastr.error("Registration error. Please try again.");
-                //    console.log("Registration error");
-                });
+            $scope.uploader.uploadAll();
+            $scope.uploader.onCompleteAll = function () {
+                authService.signUp(registerModel).success(function (responseData) {
+                    authService.setUser(responseData);
+                    $state.go('home');
+                    toastr.success("Successfully registered.");
+                    //console.log("Successfully registered.");
+                }).error(function () {
+                        toastr.error("Registration error. Please try again.");
+                        //    console.log("Registration error");
+                    });
+            }
         }
-        else{
+        else {
             toastr.error("Password not matched");
             //console.log("Password not matched");
         }
@@ -37,9 +48,9 @@ app.controller('AuthController', ['$scope', 'authService', '$state', function ($
             authService.deleteUser();
             $state.go('home');
         }).error(function () {
-            toastr.error("Server error. Can't log out");
-            //console.log("Can't log out. Server error!!!")
-        });
+                toastr.error("Server error. Can't log out");
+                //console.log("Can't log out. Server error!!!")
+            });
     };
 
     $scope.isLoggedIn = function () {
