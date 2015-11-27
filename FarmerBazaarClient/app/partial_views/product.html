@@ -40,15 +40,22 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2" class="well-lg">
-                            <rating max="5" data-ng-model="Rating"></rating>
+                        <th>গড় রেটিং</th>
+                        <td>
+                            : <rating data-ng-model="product.AverageRating" max="5" readonly="true"></rating>
                         </td>
                     </tr>
-
+                    <tr>
+                        <th>রেটিং করুন</th>
+                        <td>
+                            : <rating data-ng-model="Rating" max="5" data-ng-click="Rate()"></rating>
+                        </td>
+                    </tr>
                 </table>
 
             </div>
         </div>
+        <td colspan="2" class="well-lg">
 
     </div>
 </div>

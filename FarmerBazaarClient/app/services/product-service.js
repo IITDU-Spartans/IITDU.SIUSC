@@ -21,4 +21,8 @@ app.service('productService', ['remote', 'authService', function (remote, authSe
         var pagination = {};
         return remote.getProducts(pagination);
     };
+
+    this.addRating = function (rating) {
+        return remote.addRating(rating);
+    }
 }]);

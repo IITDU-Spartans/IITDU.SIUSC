@@ -6,7 +6,7 @@ app.controller("ProductController", ['$scope', '$state', 'productService', funct
     $scope.Pagination = {};
     $scope.Pagination.Page = 0;
     $scope.Pagination.Size = 2;
-
+    $scope.Rating = 4;
     $scope.addProduct = function (product) {
         productService.addProduct(product).success(function (response) {
             toastr.success("Your product is successfully added.");
@@ -37,11 +37,26 @@ app.controller("ProductController", ['$scope', '$state', 'productService', funct
         $scope.products = productService.getProducts($scope.Products);
         //console.log($scope.products);
         /*productService.getProducts($scope.Pagination).success(function (response) {
-            $scope.allProducts = response;
+            $scope.products = response;
 
         }).error(function (response) {
             toastr.error("Server error");
         });*/
     };
+    
+    $scope.Rate = function () {
+        var rating = {};
+        var productId = $scope.product.ProductId;
+        rating.FarmerId = $window.localStorage.farmerId;
+        rating.ProductId = productId;
+        rating.Value = $scope.Rating;
+        productService.addRating(rating).success(function (response) {
+            toastr.success("Your rating added successfully");
+            var prod = productService.getProduct(productId);
+            $scope.product.AverageRating = prod.AverageRating;
+        }).error(function (response) {
+            toastr.error("Server error. Please try again.");
+        });
+    }
 
 }]);
