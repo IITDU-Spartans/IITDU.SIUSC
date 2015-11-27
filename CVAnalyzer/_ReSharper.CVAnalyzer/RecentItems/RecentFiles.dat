@@ -1,0 +1,41 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:App_Start/f:WebApiConfig.cs" caret="697" fromTop="21" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:ViewModels/f:SignupInfoViewModel.cs" caret="144" fromTop="7" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/f:Global.asax.cs" caret="361" fromTop="0" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:ViewModels/f:LoggedInUserInfoViewModel.cs" caret="202" fromTop="9" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:Model/f:AuthToken.cs" caret="286" fromTop="11" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/f:Web.config" caret="701" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:service/f:AuthService.cs" caret="67" fromTop="2" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:AuthController.cs" caret="72" fromTop="1" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:Utility/f:TokenAuthorizeAttribute.cs" caret="284" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Product.cs" caret="113" fromTop="5" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Migrations/f:Configuration.cs" caret="422" fromTop="14" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Farmer.cs" caret="416" fromTop="14" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Migrations/f:201511272127489_ProductAndRatingModelAdded.cs" caret="22" fromTop="0" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:FarmerRepository.cs" caret="1121" fromTop="19" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:ProductRepository.cs" caret="1104" fromTop="21" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:appContext_2.cs" caret="0" fromTop="0" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Rating.cs" caret="48" fromTop="1" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:AppContext.cs" caret="410" fromTop="13" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:RatingRepository.cs" caret="1227" fromTop="18" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:App_Start/f:WebApiConfig.cs" caret="706" fromTop="21" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/f:Global.asax.cs" caret="609" fromTop="18" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:ViewModels/f:LoggedInUserInfoViewModel.cs" caret="202" fromTop="9" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Farmer.cs" caret="123" fromTop="6" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Rating.cs" caret="311" fromTop="12" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/f:Web.config" caret="701" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:AppContext.cs" caret="0" fromTop="4" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:service/f:AuthService.cs" caret="67" fromTop="2" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Controllers/f:AuthController.cs" caret="72" fromTop="1" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Migrations/f:Configuration.cs" caret="422" fromTop="14" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Authentication/d:Utility/f:TokenAuthorizeAttribute.cs" caret="284" fromTop="10" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Models/f:Product.cs" caret="113" fromTop="5" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Migrations/f:201511272127489_ProductAndRatingModelAdded.cs" caret="22" fromTop="0" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:FarmerRepository.cs" caret="1130" fromTop="19" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:ProductRepository.cs" caret="1113" fromTop="21" />
+    <File id="719E8D8D-3AE4-4325-9788-DEC7D19465B7/d:Repositories/f:RatingRepository.cs" caret="1195" fromTop="17" />
+  </RecentEdits>
+</RecentFiles>
