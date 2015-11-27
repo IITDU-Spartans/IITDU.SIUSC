@@ -13,36 +13,35 @@
                 <table class="table table-striped">
                     <tr>
                         <th>পণ্যের নাম</th>
-                        <td>: </td>
+                        <td>: {{product.Name}}</td>
                     </tr>
 
                     <tr>
                         <th>ক্যাটাগরি</th>
-                        <td>: </td>
+                        <td>: {{product.Category}}</td>
                     </tr>
 
                     <tr>
                         <th>উপ-ক্যাটাগরি</th>
-                        <td>: </td>
+                        <td>: {{product.Subcategory}}</td>
                     </tr>
 
                     <tr>
                         <th>প্রাপ্তি স্থান</th>
-                        <td>:</td>
+                        <td>: {{product.District}}</td>
                     </tr>
 
                     <tr>
                         <th>দাম</th>
-                        <td>: </td>
+                        <td>: {{product.PriceRangeFrom}} - {{product.PriceRangeTo}}</td>
                     <tr>
                         <th>মেয়াদ উত্তীর্ণের তারিখ</th>
-                        <td>:</td>
+                        <td>: {{product.ExpireDate}}</td>
                     </tr>
 
                     <tr>
                         <td colspan="2" class="well-lg">
                             <rating max="5" data-ng-model="Rating"></rating>
-
                         </td>
                     </tr>
 

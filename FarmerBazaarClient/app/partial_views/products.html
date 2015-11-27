@@ -1,4 +1,5 @@
-﻿<div class="row top-bottom-padding">
+﻿<input type="button" class="btn btn-success" value="Next" ng-click="getProducts()">
+<div class="row top-bottom-padding">
     <div class="col-lg-3">
         <div class="thumbnail">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Paddy_West_Bengal.jpg">
@@ -12,7 +13,20 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3" ng-repeat="product in products">
+        <div class="thumbnail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Paddy_West_Bengal.jpg">
+
+            <div class="caption">
+                নামঃ {{product.Name}}<br>
+                প্রাপ্তি স্থানঃ {{product.District}}<br>
+                দামঃ {{product.PriceRangeFrom}}-{{product.PriceRangeTo}} টাকা<br>
+                রেটিংঃ  {{product.AverageRating}}<br>
+                <button class="btn btn-primary" ng-click="viewProductDetail(product)">বিস্তারিত দেখুন</button> <!--"-->
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-lg-3">
         <div class="thumbnail">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Paddy_West_Bengal.jpg">
 
@@ -24,18 +38,6 @@
                 <button class="btn btn-primary">বিস্তারিত দেখুন</button>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3">
-        <div class="thumbnail">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Paddy_West_Bengal.jpg">
-
-            <div class="caption">
-                নামঃ ধান<br>
-                প্রাপ্তি স্থানঃ ঢাকা<br>
-                দামঃ ৪০-৫০ টাকা<br>
-                রেটিংঃ ৩.৫<br>
-                <button class="btn btn-primary">বিস্তারিত দেখুন</button>
-            </div>
-        </div>
-    </div>
+    </div>-->
+    <input type="button" class="btn btn-success" value="Next" ng-click="getProducts()">
 </div>

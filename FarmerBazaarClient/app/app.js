@@ -28,5 +28,22 @@ app.config(function($stateProvider, $urlRouterProvider){
         .state('editprofile', {
             url: '/edit',
             templateUrl: 'app/partial_views/forum.html'
-        });
+        })
+        .state('addproduct', {
+            url: '/addproduct',
+            templateUrl: 'app/partial_views/addProduct.html',
+            controller: 'ProductController'
+        })
+        .state('getproduct', {
+            url: '/getproduct',
+            templateUrl: 'app/partial_views/product.html',
+            controller: 'ProductDetailController',
+            params: {product : null}
+        })
+        .state('getproducts', {
+            url: '/getproducts',
+            templateUrl: 'app/partial_views/products.html',
+            controller: 'ProductController'
+        })
+    ;
 });

@@ -8,8 +8,8 @@ function Remote($http, $window, serverUrl) {
     this.signIn = function (loginModel) {
         console.log("login");
         console.log(loginModel);
-        //$window.localStorage.userId = 1;
-        //$window.localStorage.authToken = "token";
+        $window.localStorage.farmerId = 1;
+        $window.localStorage.authToken = "token";
         var url = serverUrl + 'account/signin';
         return $http.post(url, loginModel);
     };
@@ -26,7 +26,7 @@ function Remote($http, $window, serverUrl) {
     this.logOut = function (logoutModel) {
         console.log("logout");
         console.log(logoutModel);
-       // $window.localStorage.clear();
+        $window.localStorage.clear();
         var url = serverUrl + 'account/logout';
         return $http.post(url, logoutModel);
     };
@@ -36,7 +36,7 @@ function Remote($http, $window, serverUrl) {
         console.log(editModel);
         var url = serverUrl + 'account/edit';
         return $http.post(url, editModel);
-    }
+    };
 
     this.addProduct = function (productViewModel) {
         console.log("product");
@@ -56,8 +56,71 @@ function Remote($http, $window, serverUrl) {
         console.log("Pagination");
         console.log(productPagination);
         var url = serverUrl + "product/getall";
+        //return products;
         return $http.post(url, productPagination);
     };
+
+    var products = [{
+        "Name": "anik",
+        "ProductId": 1,
+        "District": "Dhaka",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }, {
+        "Name": "anik",
+        "ProductId": 2,
+        "District": "Jessore",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }, {
+        "Name": "anik",
+        "ProductId": 3,
+        "District": "Khulna",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }, {
+        "Name": "anik",
+        "ProductId": 4,
+        "District": "barisal",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }, {
+        "Name": "anik",
+        "ProductId": 5,
+        "District": "CTG",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }, {
+        "Name": "anik",
+        "ProductId": 6,
+        "District": "Manikgonj",
+        "Category": "Janina",
+        "Subcategory": "sub janina",
+        "PriceRangeFrom": 123,
+        "PriceRangeTo": 098,
+        "ExpireDate": "12/12/34",
+        "AverageRating": "3.5"
+    }];
 
 };
 

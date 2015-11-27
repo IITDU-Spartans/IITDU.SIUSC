@@ -1,9 +1,13 @@
 /**
  * Created by DELL on 11/27/2015.
  */
-app.service('productService', ['remote', function (remote) {
+app.service('productService', ['remote', 'authService', function (remote, authService) {
 
     this.addProduct = function (product) {
+        product.FarmerId = authService.getFarmerId();
+        if(!product.FarmerId){
+            toastr.warning("Please login first.");
+        }
         return remote.addProduct(product);
     };
 
