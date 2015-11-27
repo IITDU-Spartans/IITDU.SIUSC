@@ -123,6 +123,7 @@
     <Compile Include="Services\FarmerService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\RatingService.cs" />
+    <Compile Include="ViewModels\DistrictAndProductNameReqViewModel.cs" />
     <Compile Include="ViewModels\FarmerIdReqViewModel.cs" />
     <Compile Include="ViewModels\LoginReqViewModel.cs" />
     <Compile Include="ViewModels\LoginResViewModel.cs" />

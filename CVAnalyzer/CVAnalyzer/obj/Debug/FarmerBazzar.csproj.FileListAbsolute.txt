@@ -20,6 +20,7 @@ E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CV
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csproj.GenerateResource.Cache
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.dll
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.pdb
+<<<<<<< HEAD
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\CVAnalyzer.dll.config
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\CVAnalyzer.dll
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\CVAnalyzer.pdb
@@ -43,3 +44,6 @@ D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.dll
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.pdb
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.Migrations.aa.resources
 D:\ASP.NET\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csproj.GenerateResource.Cache
+=======
+E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csprojResolveAssemblyReference.cache
+>>>>>>> e2712ed06d21dbb26406e5daad1e1b9945412a0f

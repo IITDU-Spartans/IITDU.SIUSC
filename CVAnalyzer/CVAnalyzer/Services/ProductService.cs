@@ -11,14 +11,14 @@ namespace CVAnalyzer.Services
     {
         private ProductRepository _productRepository;
 
-        public  ProductService()
+        public ProductService()
         {
             _productRepository = new ProductRepository();
         }
 
         public int AddProduct(Product product)
         {
-           return _productRepository.AddProduct(product);
+            return _productRepository.AddProduct(product);
         }
         public bool DeleteProduct(Product product)
         {
@@ -30,13 +30,19 @@ namespace CVAnalyzer.Services
         }
         public List<Product> GetAllProduct(int currentPage, int size)
         {
-           return _productRepository.GetAllProduct().Skip(currentPage*size).Take(size).ToList();
+            return _productRepository.GetAllProduct().Skip(currentPage * size).Take(size).ToList();
         }
 
-         public Product GetProductByProductId(int productId)
-         {
-             return _productRepository.GetProductByProductId(productId);
-         }
+        public Product GetProductByProductId(int productId)
+        {
+            return _productRepository.GetProductByProductId(productId);
+        }
+
+
+        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, int currentPage, int size)
+        {
+            return _productRepository.GetProductsByDistrictAndProductName(districtName, productName).Skip(currentPage * size).Take(size).ToList();
+        }
 
     }
 }
