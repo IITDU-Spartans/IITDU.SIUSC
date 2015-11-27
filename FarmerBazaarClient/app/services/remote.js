@@ -38,6 +38,27 @@ function Remote($http, $window, serverUrl) {
         return $http.post(url, editModel);
     }
 
+    this.addProduct = function (productViewModel) {
+        console.log("product");
+        console.log(productViewModel);
+        var url = serverUrl + "product/add";
+        return $http.post(url, productViewModel);
+    };
+
+    this.getProductByProductId = function (product) {
+        console.log("productId");
+        console.log(product);
+        var url = serverUrl + "product/get";
+        return $http.post(url, product);
+    };
+
+    this.getProducts = function (productPagination) {
+        console.log("Pagination");
+        console.log(productPagination);
+        var url = serverUrl + "product/getall";
+        return $http.post(url, productPagination);
+    };
+
 };
 
 app.service('remote', ['$http', '$window', 'serverUrl', Remote]);
