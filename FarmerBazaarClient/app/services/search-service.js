@@ -3,8 +3,8 @@
  */
 app.service('searchService', ['remote', function(remote){
 
-    this.getAllProductByDistrictAndProductName = function(districtAndProductNameModel){
-        return remote.getAllProductByDistrictAndProductName(districtAndProductNameModel);
+    this.getAllProductByDistrictAndProductName = function(districtAndProductNameSearchModel){
+        return remote.getAllProductByDistrictAndProductName(districtAndProductNameSearchModel);
     }
 
 }])

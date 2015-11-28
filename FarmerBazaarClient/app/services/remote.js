@@ -39,9 +39,10 @@ function Remote($http, $window, serverUrl) {
     }
 
 
-    this.getAllProductByDistrictAndProductName =  function(districtAndProductNameModel){
+    this.getAllProductByDistrictAndProductName =  function(districtAndProductNameSearchModel){
+        console.log(districtAndProductNameSearchModel);
         var url = serverUrl + 'product/getAllByDistrictAndProductName';
-        return $http.post(serverUrl, districtAndProductNameModel);
+        return $http.post(url, districtAndProductNameSearchModel);
     }
 
 };

@@ -18,3 +18,10 @@ app.directive('test', function(){
         templateUrl: 'app/partial_views/test.html'
     } ;
 });
+/*
+app.directive('search_result', function(){
+    return{
+        restrict: 'E',
+        templateUrl: 'app/partial_views/products.html'
+    } ;
+});*/

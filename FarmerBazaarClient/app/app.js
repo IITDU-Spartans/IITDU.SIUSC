@@ -28,5 +28,10 @@ app.config(function($stateProvider, $urlRouterProvider){
         .state('editprofile', {
             url: '/edit',
             templateUrl: 'app/partial_views/forum.html'
+        })
+        .state('search',{
+            url: '/search',
+            controller: 'searchController',
+            templateUrl:'app/partial_views/search_result.html',
         });
 });
