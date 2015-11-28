@@ -1,4 +1,5 @@
-﻿using CVAnalyzer.Services;
+﻿using CVAnalyzer.Authentication.Utility;
+using CVAnalyzer.Services;
 using CVAnalyzer.ViewModels;
 using FarmerBazzar.Models;
 using System;
@@ -75,7 +76,8 @@ namespace CVAnalyzer.Controllers
             return Ok(loginResViewModel);
         }
 
-        [Route("account/signout")]
+        [Route("account/logout")]
+        [TokenAuthorize]
         [HttpPost]
         public IHttpActionResult Signout(FarmerIdReqViewModel farmerIdReqViewModel)
         {
