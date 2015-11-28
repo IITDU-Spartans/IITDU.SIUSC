@@ -1,6 +1,6 @@
 <div class="top-bottom-padding">
     <div class="col-lg-8 center">
-        <form class="form-horizontal well">
+        <form class="form-horizontal well" ng-submit="addProduct(product)">
             <fieldset>
                 <legend>পণ্য যোগ করুন</legend>
 
@@ -9,7 +9,7 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="পণ্যের নাম "
-                               name="Email">
+                               name="Email" ng-model="product.ProductName">
                     </div>
 
                 </div>
@@ -18,7 +18,7 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="শ্রেণী "
-                               name="Email">
+                               name="Email" ng-model="product.Category">
                     </div>
 
                 </div>
@@ -27,7 +27,7 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="উপ-শ্রেণী"
-                               name="Email">
+                               name="Email" ng-model="product.Subcategory">
                     </div>
 
                 </div>
@@ -36,12 +36,12 @@
 
                     <div class="col-lg-3">
                         <input type="number" class="form-control" id="" required="" placeholder="দাম "
-                               name="" min="0">
+                               name="" min="0" ng-model="product.PriceRangeFrom">
                     </div>
                     <label class="col-lg-1 control-label">থেকে</label>
                     <div class="col-lg-3">
                         <input type="number" class="form-control" id="" required="" placeholder="দাম "
-                               name="" min="0">
+                               name="" min="0" ng-model="product.PriceRangeTo">
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="প্রাপ্তি স্থান "
-                               name="Email">
+                               name="Email" ng-model="product.District">
                     </div>
 
                 </div>
@@ -59,7 +59,7 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="মেয়াদ উত্তীর্ণের তারিখ"
-                               name="Email">
+                               name="Email" ng-model="product.ExpireDate">
                     </div>
 
                 </div>

@@ -1,7 +1,7 @@
 /**
  * Created by Anik 0422 on 10/25/15.
  */
-var app = angular.module("app", ['ui.router', 'angularFileUpload']);
+var app = angular.module("app", ['ui.router', 'angularFileUpload','ui.bootstrap']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -32,6 +32,23 @@ app.config(function($stateProvider, $urlRouterProvider){
         .state('search',{
             url: '/search',
             controller: 'searchController',
-            templateUrl:'app/partial_views/search_result.html',
-        });
+            templateUrl:'app/partial_views/search_result.html'
+        })
+        .state('addproduct', {
+            url: '/addproduct',
+            templateUrl: 'app/partial_views/addProduct.html',
+            controller: 'ProductController'
+        })
+        .state('getproduct', {
+            url: '/getproduct',
+            templateUrl: 'app/partial_views/product.html',
+            controller: 'ProductDetailController',
+            params: {product : null}
+        })
+        .state('getproducts', {
+            url: '/getproducts',
+            templateUrl: 'app/partial_views/products.html',
+            controller: 'ProductController'
+        })
+    ;
 });
