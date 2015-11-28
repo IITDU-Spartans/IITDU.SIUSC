@@ -38,6 +38,12 @@ function Remote($http, $window, serverUrl) {
         return $http.post(url, editModel);
     }
 
+
+    this.getAllProductByDistrictAndProductName =  function(districtAndProductNameModel){
+        var url = serverUrl + 'product/getAllByDistrictAndProductName';
+        return $http.post(serverUrl, districtAndProductNameModel);
+    }
+
 };
 
 app.service('remote', ['$http', '$window', 'serverUrl', Remote]);
