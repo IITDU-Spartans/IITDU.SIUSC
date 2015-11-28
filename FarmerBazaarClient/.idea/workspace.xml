@@ -44,19 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-controller.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="auth-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
+            <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="signup.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-20.153847" vertical-offset="530" max-vertical-offset="1224">
+            <state line="58" column="60" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.7562724" vertical-offset="564" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/services/uuid-service.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/partial_views/signup.html" />
         <option value="$PROJECT_DIR$/app/controllers/auth-controller.js" />
+        <option value="$PROJECT_DIR$/app/partial_views/signup.html" />
       </list>
     </option>
   </component>
@@ -455,16 +455,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-20.153847" vertical-offset="530" max-vertical-offset="1224">
+        <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
+        <state line="58" column="60" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.7562724" vertical-offset="564" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
