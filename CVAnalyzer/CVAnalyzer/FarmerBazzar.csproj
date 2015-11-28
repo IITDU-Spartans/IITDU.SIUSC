@@ -102,13 +102,9 @@
     <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RatingController.cs" />
-    <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.cs" />
-    <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.Designer.cs">
-      <DependentUpon>201511272127489_ProductAndRatingModelAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511272238296_DatabaseUpdated.cs" />
-    <Compile Include="Migrations\201511272238296_DatabaseUpdated.Designer.cs">
-      <DependentUpon>201511272238296_DatabaseUpdated.cs</DependentUpon>
+    <Compile Include="Migrations\201511271526535_aa.cs" />
+    <Compile Include="Migrations\201511271526535_aa.Designer.cs">
+      <DependentUpon>201511271526535_aa.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
@@ -156,11 +152,8 @@
     <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511272127489_ProductAndRatingModelAdded.resx">
-      <DependentUpon>201511272127489_ProductAndRatingModelAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511272238296_DatabaseUpdated.resx">
-      <DependentUpon>201511272238296_DatabaseUpdated.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511271526535_aa.resx">
+      <DependentUpon>201511271526535_aa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
