@@ -46,9 +46,9 @@ namespace CVAnalyzer.Repositories
             return _appContext.Products.FirstOrDefault(p => p.ProductId.Equals(productId));
         }
 
-        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName)
+        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, string categoryName)
         {
-            return _appContext.Products.Where(p => p.Name.Equals(productName) && p.District.Equals(districtName)).ToList();
+            return _appContext.Products.Where(p => p.Name.Equals(productName) && p.District.Equals(districtName) && p.Category.Equals(categoryName)).ToList();
 
         }
     }

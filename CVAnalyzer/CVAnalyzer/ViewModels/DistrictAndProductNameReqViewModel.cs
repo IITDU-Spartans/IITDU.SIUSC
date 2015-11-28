@@ -9,6 +9,7 @@ namespace CVAnalyzer.ViewModels
     {
         public string DistrictName { get; set; }
         public string ProductName { get; set; }
+        public string CategoryName { get; set; }
         public int Page { get; set; }
         public int Size { get; set; }
     }

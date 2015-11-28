@@ -24,7 +24,10 @@ namespace CVAnalyzer.Services
         {
             return _productRepository.DeleteProduct(product);
         }
-
+        public bool DeleteProduct(int productId)
+        {
+            return _productRepository.DeleteProduct(GetProductByProductId(productId));
+        }
         public List<Product> GetAllProduct(int currentPage, int size)
         {
             return _productRepository.GetAllProduct().Skip(currentPage * size).Take(size).ToList();
@@ -36,9 +39,9 @@ namespace CVAnalyzer.Services
         }
 
 
-        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, int currentPage, int size)
+        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, string categoryName,  int currentPage, int size)
         {
-            return _productRepository.GetProductsByDistrictAndProductName(districtName, productName).Skip(currentPage * size).Take(size).ToList();
+            return _productRepository.GetProductsByDistrictAndProductName(districtName, productName, categoryName).Skip(currentPage * size).Take(size).ToList();
         }
 
     }

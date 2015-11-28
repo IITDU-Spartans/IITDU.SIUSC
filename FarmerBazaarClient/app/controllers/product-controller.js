@@ -52,20 +52,6 @@ app.controller("ProductController", ['$scope', '$state', 'productService', funct
     };
     $scope.getProducts();
 
-    $scope.Rate = function () {
-        alert($scope.Rating);
-        var rating = {};
-        var productId = $scope.product.ProductId;
-        rating.FarmerId = $window.localStorage.farmerId;
-        rating.ProductId = productId;
-        rating.Value = $scope.Rating;
-        productService.addRating(rating).success(function (response) {
-            toastr.success("Your rating added successfully");
-            var prod = productService.getProduct(productId);
-            $scope.product.AverageRating = prod.AverageRating;
-        }).error(function (response) {
-            toastr.error("Server error. Please try again.");
-        });
-    }
+
 
 }]);

@@ -26,12 +26,23 @@ namespace CVAnalyzer.Repositories
 
         public bool UpdateFarmer(Farmer farmer)
         {
-            _appContext.Entry(farmer).State = EntityState.Modified;
+            var oldFarmer = GetFarmer(farmer.MobileNumber);
+            oldFarmer.FullName = farmer.FullName;
+            oldFarmer.Address = farmer.Address;
+            oldFarmer.PhotoUrl = farmer.PhotoUrl;
+            oldFarmer.Password = farmer.Password;
+            _appContext.Entry(oldFarmer).State = EntityState.Modified;
             return _appContext.SaveChanges() > 0;
         }
 
         public bool DeleteFarmer(Farmer farmer)
         {
+            _appContext.Farmers.Remove(farmer);
+            return _appContext.SaveChanges() > 0;
+        }
+        public bool DeleteFarmer(String mobileNumber)
+        {
+            var farmer = GetFarmer(mobileNumber);
             _appContext.Farmers.Remove(farmer);
             return _appContext.SaveChanges() > 0;
         }

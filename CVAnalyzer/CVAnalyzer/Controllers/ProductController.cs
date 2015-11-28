@@ -38,7 +38,7 @@ namespace CVAnalyzer.Controllers
                                   Subcategory = productViewModel.Subcategory
                               };
             var productId = _productService.AddProduct(product);
-           // var productAddResViewModel = new ProductAddResViewModel { ProductId = productId };*/
+            // var productAddResViewModel = new ProductAddResViewModel { ProductId = productId };*/
             return Ok(GetProductResViewModel(product));
         }
 
@@ -86,10 +86,10 @@ namespace CVAnalyzer.Controllers
         [HttpPost]
         public IHttpActionResult GetAllProductsByDistrictAndProductName(DistrictAndProductNameReqViewModel districtAndProductNameViewModel)
         {
-           var products =_productService.GetProductsByDistrictAndProductName(districtAndProductNameViewModel.DistrictName,
-                                                                districtAndProductNameViewModel.ProductName,
-                                                                districtAndProductNameViewModel.Page,
-                                                                districtAndProductNameViewModel.Size);
+            var products = _productService.GetProductsByDistrictAndProductName(districtAndProductNameViewModel.DistrictName,
+                                                                 districtAndProductNameViewModel.ProductName, districtAndProductNameViewModel.CategoryName,
+                                                                 districtAndProductNameViewModel.Page,
+                                                                 districtAndProductNameViewModel.Size);
 
             var productResViewModels = new List<ProductResViewModel>();
             foreach (var product in products)
