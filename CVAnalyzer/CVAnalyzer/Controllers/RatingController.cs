@@ -33,7 +33,7 @@ namespace CVAnalyzer.Controllers
             {
                 return Ok(ratingViewModel);
             }
-            return BadRequest("Already Rated");
+            return BadRequest("Can't Rate");
         }
 
 

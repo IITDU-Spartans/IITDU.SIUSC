@@ -48,7 +48,7 @@ namespace CVAnalyzer.Repositories
 
         public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, string categoryName)
         {
-            return _appContext.Products.Where(p => p.Name.Equals(productName) && p.District.Equals(districtName) && p.Category.Equals(categoryName)).ToList();
+            return _appContext.Products.Where(p => (p.Name.Equals(productName) || productName==null) && (p.District.Equals(districtName) || districtName.Equals(null)) && (p.Category.Equals(categoryName) || categoryName.Equals(null))).ToList();
 
         }
     }

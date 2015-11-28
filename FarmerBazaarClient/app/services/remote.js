@@ -26,7 +26,7 @@ function Remote($http, $window, serverUrl) {
     this.logOut = function (logoutModel) {
         console.log("logout");
         console.log(logoutModel);
-        $window.localStorage.clear();
+     //   $window.localStorage.clear();
         var url = serverUrl + 'account/logout';
         return $http.post(url, logoutModel);
     };
@@ -133,6 +133,17 @@ function Remote($http, $window, serverUrl) {
         var url = serverUrl + 'product/getAllByDistrictAndProductName';
         return $http.post(url, districtAndProductNameSearchModel);
     }
+
+    this.getUser=function(farmerIdModel){
+        var url = serverUrl + 'account/get';
+        return $http.post(url, farmerIdModel);
+    }
+
+    this.getHeatMapValues = function (crop) {
+        var url = serverUrl + "product/map";
+        return $http.post(url, crop);
+        //return heatMapValues;
+    };
 
 };
 

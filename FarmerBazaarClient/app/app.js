@@ -26,8 +26,9 @@ app.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'app/partial_views/signin.html'
         })
         .state('editprofile', {
-            url: '/edit',
-            templateUrl: 'app/partial_views/forum.html'
+            url: '/editprofile',
+            controller: 'editAccountController',
+            templateUrl: 'app/partial_views/editAccount.html'
         })
         .state('search',{
             url: '/search',
@@ -49,6 +50,10 @@ app.config(function($stateProvider, $urlRouterProvider){
             url: '/getproducts',
             templateUrl: 'app/partial_views/products.html',
             controller: 'ProductController'
+        }).state('heatmap', {
+            url: '/heatmap',
+            templateUrl: 'app/partial_views/heatmap.html',
+            controller: 'HeatmapController'
         })
     ;
 });

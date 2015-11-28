@@ -1,4 +1,5 @@
-﻿using CVAnalyzer.Authentication.Utility;
+﻿using CVAnalyzer.Authentication.service;
+using CVAnalyzer.Authentication.Utility;
 using CVAnalyzer.Services;
 using CVAnalyzer.ViewModels;
 using FarmerBazzar.Models;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using FarmerBazzar.Repositories;
 
 namespace CVAnalyzer.Controllers
 {
@@ -44,7 +46,7 @@ namespace CVAnalyzer.Controllers
             var registerResViewModel = new RegisterResViewModel
                                            {
                                                FarmerId = farmer.FarmerId,
-                                               TokenValue = _accountService.Signin(farmer)
+                                               TokenValue = new AuthService(new AppContext()).CreateAuthToken(farmer.FarmerId)
                                            };
             return Ok(registerResViewModel);
         }
@@ -113,6 +115,12 @@ namespace CVAnalyzer.Controllers
             return BadRequest("Can't update");
         }
 
+        [Route("account/get")]
+        [HttpPost]
+        public IHttpActionResult GetUserProfile(FarmerIdModel farmerIdModel)
+        {
+            return Ok(_farmerService.GetFarmer(farmerIdModel.FarmerId));
+        }
 
     }
 }

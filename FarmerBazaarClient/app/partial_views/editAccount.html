@@ -3,13 +3,15 @@
         <form class="form-horizontal well">
             <fieldset>
                 <legend>তথ্য হালনাগাদ করুন</legend>
-
+                <div class="form-group">
+                    <img ng-src="{{editModel.PhotoUrl}}" height="100" width="100">
+                </div>
                 <div class="form-group">
                     <label class="col-lg-4 control-label">পূর্ণ নাম *</label>
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="পূর্ণ নাম"
-                               name="Email">
+                               name="Email" ng-model="editModel.FullName">
                     </div>
 
                 </div>
@@ -18,15 +20,27 @@
 
                     <div class="col-lg-8">
                         <input type="text" class="form-control" id="" required="" placeholder="ঠিকানা "
-                               name="Email">
+                               name="Email" ng-model="editModel.Address">
                     </div>
 
                 </div>
-                <!--Image-->
+                <div class="form-group">
+                    <label for="inputFile" class="col-lg-4 control-label">ছবি আপ্লোড করুন</label>
+
+                    <div class="well" nv-file-drop="" uploader="uploader">
+                        <input type="file" nv-file-select="" uploader="uploader"/>
+                    </div>
+                </div>
+                <div class='progress progress-striped' ng-if="uploader.queue.length>0">
+                    <div class="progress-bar progress-bar-success " role="progressbar"
+                         ng-style="{ 'width': uploader.queue[0].progress + '%' }">
+                        {{uploader.queue[0].progress}} %
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-4">
-                        <button class="btn btn-success col-lg-3" type="submit">হালনাগাদ করুন</button>
+                        <button class="btn btn-success col-lg-3" type="submit" ng-click="editAccount(editModel)">হালনাগাদ করুন</button>
                     </div>
                 </div>
             </fieldset>

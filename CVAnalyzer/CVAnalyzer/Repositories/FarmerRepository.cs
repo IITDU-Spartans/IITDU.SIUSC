@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using FarmerBazzar.Utility;
 
 namespace CVAnalyzer.Repositories
 {
@@ -26,11 +27,11 @@ namespace CVAnalyzer.Repositories
 
         public bool UpdateFarmer(Farmer farmer)
         {
-            var oldFarmer = GetFarmer(farmer.MobileNumber);
+            var oldFarmer = _appContext.Farmers.FirstOrDefault(f => f.FarmerId.Equals(farmer.FarmerId));//GetFarmer(farmer.MobileNumber);
             oldFarmer.FullName = farmer.FullName;
             oldFarmer.Address = farmer.Address;
             oldFarmer.PhotoUrl = farmer.PhotoUrl;
-            oldFarmer.Password = farmer.Password;
+            oldFarmer.Password = Encryption.GetHash(farmer.Password);
             _appContext.Entry(oldFarmer).State = EntityState.Modified;
             return _appContext.SaveChanges() > 0;
         }
@@ -51,5 +52,9 @@ namespace CVAnalyzer.Repositories
             return _appContext.Farmers.FirstOrDefault(f=>f.MobileNumber.Equals(mobileNumber));
         }
 
+        public Farmer GetFarmer(int farmerId)
+        {
+            return _appContext.Farmers.FirstOrDefault(f => f.FarmerId.Equals(farmerId));
+        }
     }
 }

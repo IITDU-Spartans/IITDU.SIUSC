@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using FarmerBazzar.Repositories;
+using FarmerBazzar.Utility;
 
 namespace CVAnalyzer.Services
 {
@@ -25,6 +26,7 @@ namespace CVAnalyzer.Services
             {
                 return false;
             }
+            farmer.Password = Encryption.GetHash(farmer.Password);
             _farmerRepository.AddFarmer(farmer);
             return true;
         }
@@ -34,7 +36,7 @@ namespace CVAnalyzer.Services
             var farmer = _farmerRepository.GetFarmer(farmerSigninInfo.MobileNumber);
             if (farmer.Equals(null))
                 return null;
-            if (!farmer.Password.Equals(farmerSigninInfo.Password))
+            if (!farmer.Password.Equals(Encryption.GetHash(farmerSigninInfo.Password)))
                 return null;
 
             return _authService.CreateAuthToken(farmer.FarmerId);

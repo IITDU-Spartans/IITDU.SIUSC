@@ -10,15 +10,19 @@ namespace CVAnalyzer.Services
     public class RatingService
     {
         private RatingRepository _ratingRepository;
+        private ProductRepository _productRepository;
 
         public RatingService()
         {
             _ratingRepository = new RatingRepository();
+            _productRepository = new ProductRepository();
         }
 
         public bool RateProduct(Rating rating)
         {
             if (_ratingRepository.HasRated(rating.FarmerId, rating.ProductId))
+                return false;
+            if (_productRepository.GetProductByProductId(rating.ProductId).FarmerId.Equals(rating.FarmerId))
                 return false;
             _ratingRepository.AddRating(rating);
             return true;
@@ -30,5 +34,9 @@ namespace CVAnalyzer.Services
         }
 
 
+        public bool DeleteRating(int productId)
+        {
+            return _ratingRepository.DeleteRating(productId);
+        }
     }
 }

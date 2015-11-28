@@ -20,5 +20,9 @@ namespace CVAnalyzer.Services
         {
             return _farmerRepository.GetFarmer(mobileNumber);
         }
+        public Farmer GetFarmer(int farmerId)
+        {
+            return _farmerRepository.GetFarmer(farmerId);
+        }
     }
 }

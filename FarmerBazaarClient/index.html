@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/styles/top-bottom-padding.css">
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/Leaflet.markercluster-master/Leaflet.markercluster-master/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="bower_components/Leaflet.markercluster-master/Leaflet.markercluster-master/dist/MarkerCluster.Default.css">
     <link rel="stylesheet" href="bower_components/toastr/toastr.css">
 </head>
 <body ng-app="app">
@@ -21,6 +24,7 @@
     </div>
 </div>
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 <!--jquery-->
 <script type="application/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -38,7 +42,17 @@
 <!--toastr-->
 <script type="application/javascript" src="bower_components/toastr/toastr.js"></script>
 
-<script type="application/javascript" src="bower_components/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<!--leaflet-->
+<script src="bower_components/leaflet/dist/leaflet.js"></script>
+<script src="bower_components/leaflet-google/leaflet-google.js"></script>
+<script src="bower_components/Leaflet.markercluster-master/Leaflet.markercluster-master/dist/leaflet.markercluster-src.js"></script>
+
+<!--leaflet heatmap-->
+<script src="bower_components/Leaflet.heat-gh-pages/dist/leaflet-heat.js"></script>
+
+<!--addresspoints-->
+<script src="http://leaflet.github.io/Leaflet.markercluster/example/realworld.10000.js"></script>
+
 <!--main dependencies-->
 <script type="application/javascript" src="app/app.js"></script>
 <script type="application/javascript" src="app/directives/partial-view-directives.js"></script>
@@ -50,6 +64,9 @@
 <script type="application/javascript" src="app/services/auth-service.js"></script>
 <script type="application/javascript" src="app/services/uuid-service.js"></script>
 <script type="application/javascript" src="app/services/product-service.js"></script>
+<script type="application/javascript" src="app/services/mapload-service.js"></script>
+<script type="application/javascript" src="app/services/heatmap-service.js"></script>
+
 
 <script type="application/javascript" src="app/services/search-service.js"></script>
 
@@ -58,6 +75,7 @@
 <script type="application/javascript" src="app/controllers/search-controller.js"></script>
 <script type="application/javascript" src="app/controllers/product-controller.js"></script>
 <script type="application/javascript" src="app/controllers/product-detail-controller.js"></script>
-
+<script type="application/javascript" src="app/controllers/edit-account-controller.js"></script>
+<script src="app/controllers/heatmap-controller.js"></script>
 </body>
 </html>

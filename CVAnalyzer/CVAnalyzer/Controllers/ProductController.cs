@@ -86,20 +86,50 @@ namespace CVAnalyzer.Controllers
         [HttpPost]
         public IHttpActionResult GetAllProductsByDistrictAndProductName(DistrictAndProductNameReqViewModel districtAndProductNameViewModel)
         {
-            var products = _productService.GetProductsByDistrictAndProductName(districtAndProductNameViewModel.DistrictName,
-                                                                 districtAndProductNameViewModel.ProductName, districtAndProductNameViewModel.CategoryName,
-                                                                 districtAndProductNameViewModel.Page,
-                                                                 districtAndProductNameViewModel.Size);
-
-            var productResViewModels = new List<ProductResViewModel>();
-            foreach (var product in products)
+            try
             {
-                productResViewModels.Add(GetProductResViewModel(product));
+                if (districtAndProductNameViewModel == null)
+                    return Ok("no result found");
+
+                var products =
+                    _productService.GetProductsByDistrictAndProductName(districtAndProductNameViewModel.DistrictName,
+                                                                        districtAndProductNameViewModel.ProductName,
+                                                                        districtAndProductNameViewModel.CategoryName,
+                                                                        districtAndProductNameViewModel.Page,
+                                                                        districtAndProductNameViewModel.Size);
+
+                var productResViewModels = new List<ProductResViewModel>();
+                foreach (var product in products)
+                {
+                    productResViewModels.Add(GetProductResViewModel(product));
+                }
+
+                return Ok(productResViewModels);
+            }
+            catch (Exception exception)
+            {
+                return BadRequest("error");
             }
 
-            return Ok(productResViewModels);
         }
 
+
+        [Route("product/map")]
+        [HttpPost]
+        public IHttpActionResult GetMapResponseViewModels(MapReqViewModel mapReqViewModel)
+        {
+            try
+            {
+
+                if (mapReqViewModel.Equals(null))
+                    return BadRequest("null object");
+                return Ok(_productService.GetMapResponseViewModels(mapReqViewModel));
+            }
+            catch (Exception)
+            {
+                return BadRequest("error");
+            }
+        }
 
         private ProductResViewModel GetProductResViewModel(Product product)
         {
@@ -119,6 +149,9 @@ namespace CVAnalyzer.Controllers
             };
             return productResViewModel;
         }
+
+
+
 
     }
 }

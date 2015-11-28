@@ -1,4 +1,5 @@
 ﻿using CVAnalyzer.Repositories;
+using CVAnalyzer.ViewModels;
 using FarmerBazzar.Models;
 using System;
 using System.Collections.Generic;
@@ -39,9 +40,30 @@ namespace CVAnalyzer.Services
         }
 
 
-        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, string categoryName,  int currentPage, int size)
+        public List<Product> GetProductsByDistrictAndProductName(string districtName, string productName, string categoryName, int currentPage, int size)
         {
             return _productRepository.GetProductsByDistrictAndProductName(districtName, productName, categoryName).Skip(currentPage * size).Take(size).ToList();
+        }
+
+
+        public List<MapResViewModel> GetMapResponseViewModels(MapReqViewModel mapReqViewModel)
+        {
+            List<string> districts = _productRepository.GetAllProduct().Select(e => e.District).Distinct().ToList();
+            List<MapResViewModel> mapResViewModels = new List<MapResViewModel>();
+            foreach (var district in districts)
+            {
+                var mapResViewModel = new MapResViewModel();
+                mapResViewModel.District = district;
+
+                IEnumerable<Product> prod = _productRepository.GetAllProduct().Where(p => p.District.Equals(district) && p.Name.Equals(mapReqViewModel.Name));
+                if(prod.Count()<=0)
+                    continue;
+                
+                mapResViewModel.AveragePrice = prod.Select(p => p.PriceRangeFrom + p.PriceRangeTo).Average() / 2.0;
+                mapResViewModels.Add(mapResViewModel);
+            }
+
+            return mapResViewModels;
         }
 
     }

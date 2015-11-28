@@ -1,13 +1,17 @@
 /**
  * Created by DELL on 11/27/2015.
  */
-app.controller("ProductDetailController", ["$scope", "$stateParams", 'productService', '$window', function($scope, $stateParams, productService, $window){
+app.controller("ProductDetailController", ["$scope", "$stateParams", 'productService', '$window', '$state',function($scope, $stateParams, productService, $window,$state){
     console.log($stateParams.product);
     $scope.product = {};
     $scope.product = $stateParams.product;
     $scope.Rating = 0;
     $scope.Rate = function () {
         console.log($scope.Rating);
+        if(!$window.localStorage.authToken){
+            $state.go("signin");
+            return;
+        }
         if($scope.Rating>0){
             var rating = {};
             var productId = $scope.product.ProductId;
@@ -21,7 +25,7 @@ app.controller("ProductDetailController", ["$scope", "$stateParams", 'productSer
                });
 
             }).error(function (response) {
-                    toastr.error("Server error. Please try again.");
+                    toastr.error("You are not allowed to rate");
                 });
         }
     }

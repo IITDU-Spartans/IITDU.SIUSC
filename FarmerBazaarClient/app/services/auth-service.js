@@ -59,4 +59,13 @@ app.service('authService', ['$window', 'remote', function($window, remote){
         else
             return false;
     };
+
+    this.editUser = function(editModel){
+        return remote.editAccount(editModel);
+    }
+
+    this.getFarmer = function(farmerIdModel){
+        return remote.getUser(farmerIdModel);
+    }
+
 }]);

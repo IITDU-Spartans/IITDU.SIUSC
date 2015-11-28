@@ -1,0 +1,19 @@
+<div class="top-bottom-padding col-lg-8 center">
+    <div class="panel panel-success">
+        <select class="form-control" ng-model="crop.Name"  name="District">
+            <option>জেলা</option>
+            <option>ঢাকা</option>
+            <option>চট্টগ্রাম</option>
+        </select>
+        <div>
+            <form ng-submit="getHeatMapValues(crop)">
+                <input type="text" ng-model="crop.Name">
+            </form>
+            <input type="button" class="btn btn-success" value="View Test Data" ng-click="ViewDummyData()">
+            <input type="button" class="btn btn-success" value="View Heat Map" ng-click="getHeatMapValues(crop)">
+            <input type="button" class="btn btn-success" value="View Clustered Marker" ng-click="getAllMarkersByCrop(crop)">
+
+        </div>
+        <div style="width:700px; height:600px" id="map"></div>
+    </div>
+</div>

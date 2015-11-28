@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-5" style="padding-top: 20px;">
             <div class="thumbnail">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Paddy_West_Bengal.jpg">
+                <img ng-src="{{product.PhotoUrl}}">
             </div>
         </div>
         <div class="panel-body">
@@ -36,7 +36,7 @@
                         <td>: {{product.PriceRangeFrom}} - {{product.PriceRangeTo}}</td>
                     <tr>
                         <th>মেয়াদ উত্তীর্ণের তারিখ</th>
-                        <td>: {{product.ExpireDate}}</td>
+                        <td>: {{product.ExpiryDate | date:'dd-M-yyyy'}}</td>
                     </tr>
 
                     <tr>

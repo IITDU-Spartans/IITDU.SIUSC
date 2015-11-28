@@ -102,10 +102,6 @@
     <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RatingController.cs" />
-    <Compile Include="Migrations\201511271526535_aa.cs" />
-    <Compile Include="Migrations\201511271526535_aa.Designer.cs">
-      <DependentUpon>201511271526535_aa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Rating.cs" />
@@ -123,10 +119,14 @@
     <Compile Include="Services\FarmerService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\RatingService.cs" />
+    <Compile Include="Utility\Encryption.cs" />
     <Compile Include="ViewModels\DistrictAndProductNameReqViewModel.cs" />
+    <Compile Include="ViewModels\FarmerIdModel.cs" />
     <Compile Include="ViewModels\FarmerIdReqViewModel.cs" />
     <Compile Include="ViewModels\LoginReqViewModel.cs" />
     <Compile Include="ViewModels\LoginResViewModel.cs" />
+    <Compile Include="ViewModels\MapReqViewModel.cs" />
+    <Compile Include="ViewModels\MapResViewModel.cs" />
     <Compile Include="ViewModels\ProductAddResViewModel.cs" />
     <Compile Include="ViewModels\ProductGetAllReqModel.cs" />
     <Compile Include="ViewModels\ProductIdReqViewModel.cs" />
@@ -149,13 +149,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Theme1\" />
     <Folder Include="upload\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511271526535_aa.resx">
-      <DependentUpon>201511271526535_aa.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

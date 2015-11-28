@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="719E8D8D-3AE4-4325-9788-DEC7D19465B7" ModuleId="FarmerBazzar" />
+  <Module PersistentId="5B27D8C0-B7D6-4FFA-90CE-7C56FC783D90" ModuleId="Tests" />
 </Modules>

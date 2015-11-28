@@ -51,5 +51,10 @@ namespace CVAnalyzer.Repositories
             return _appContext.Ratings.Where(r => r.ProductId.Equals(productId)).Average(r => r.Value);
         }
 
+        public bool DeleteRating(int productId)
+        {
+            _appContext.Ratings.RemoveRange(_appContext.Ratings.Where(e => e.ProductId == productId));
+            return _appContext.SaveChanges() > 0;
+        }
     }
 }
