@@ -13,10 +13,12 @@ namespace CVAnalyzer.Controllers
     public class ProductController : ApiController
     {
         private ProductService _productService;
+        private RatingService _ratingService;
 
         public ProductController()
         {
             _productService = new ProductService();
+            _ratingService = new RatingService();
         }
 
         [Route("product/add")]
@@ -44,14 +46,51 @@ namespace CVAnalyzer.Controllers
         [HttpPost]
         public IHttpActionResult GetProduct(ProductIdReqViewModel productIdReqViewModel)
         {
-            return Ok(_productService.GetProductByProductId(productIdReqViewModel.ProductId));
+
+            var product = _productService.GetProductByProductId(productIdReqViewModel.ProductId);
+            var productResViewModel = new ProductResViewModel
+                                                          {
+                                                              AverageRating = _ratingService.GetAverageRating(product.ProductId),
+                                                              Category = product.Category,
+                                                              District = product.District,
+                                                              ExpiryDate = product.ExpiryDate,
+                                                              FarmerId = product.FarmerId,
+                                                              Name = product.Name,
+                                                              PhotoUrl = product.PhotoUrl,
+                                                              PriceRangeFrom = product.PriceRangeFrom,
+                                                              PriceRangeTo = product.PriceRangeTo,
+                                                              ProductId = product.ProductId,
+                                                              Subcategory = product.Subcategory
+                                                          };
+            return Ok(productResViewModel);
         }
 
         [Route("product/getall")]
         [HttpPost]
         public IHttpActionResult GetAllProduct(ProductGetAllReqModel productGetAllReqModel)
         {
-            return Ok(_productService.GetAllProduct(productGetAllReqModel.Page, productGetAllReqModel.Size));
+            var productResViewModels = new List<ProductResViewModel>();
+            var products = _productService.GetAllProduct(productGetAllReqModel.Page, productGetAllReqModel.Size);
+
+            foreach (var product in products)
+            {
+                var productResViewModel = new ProductResViewModel
+                {
+                    AverageRating = _ratingService.GetAverageRating(product.ProductId),
+                    Category = product.Category,
+                    District = product.District,
+                    ExpiryDate = product.ExpiryDate,
+                    FarmerId = product.FarmerId,
+                    Name = product.Name,
+                    PhotoUrl = product.PhotoUrl,
+                    PriceRangeFrom = product.PriceRangeFrom,
+                    PriceRangeTo = product.PriceRangeTo,
+                    ProductId = product.ProductId,
+                    Subcategory = product.Subcategory
+                };
+                productResViewModels.Add(productResViewModel);
+            }
+            return Ok(productResViewModels);
         }
 
     }
