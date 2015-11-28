@@ -99,6 +99,7 @@
     <Compile Include="Authentication\Utility\TokenAuthorizeAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RatingController.cs" />
     <Compile Include="Migrations\201511272127489_ProductAndRatingModelAdded.cs" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201511272127489_ProductAndRatingModelAdded.resx">

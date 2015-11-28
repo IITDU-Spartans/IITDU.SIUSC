@@ -23,11 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
+      <file leaf-file-name="auth-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/auth-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+            <state line="15" column="0" selection-start="368" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uuid-service.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/uuid-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="21" selection-start="91" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+                <marker date="1448674555655" expanded="true" signature="67:600" placeholder="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,16 +47,16 @@
       <file leaf-file-name="auth-controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="4" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.9417808" vertical-offset="555" max-vertical-offset="1207">
+            <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middle.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partial_views/middle.html">
+      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="62" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-20.153847" vertical-offset="530" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -53,54 +65,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server-url.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/server-url.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="46" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partial_views/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/remote.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="20" selection-start="914" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1003">
-              <folding>
-                <element signature="n#!!block;n#DummyRemote#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/auth-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="19" selection-start="1232" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="341" max-vertical-offset="1139">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partial_views/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+            <state line="46" column="71" selection-start="1852" selection-end="1852" vertical-scroll-proportion="-12.961538" vertical-offset="445" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -118,6 +83,10 @@
       <list>
         <option value="$PROJECT_DIR$/app/services/remote.js" />
         <option value="$PROJECT_DIR$/app/services/auth-service.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/services/uuid-service.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/partial_views/signup.html" />
         <option value="$PROJECT_DIR$/app/controllers/auth-controller.js" />
       </list>
     </option>
@@ -269,13 +238,14 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="options.lastSelected" value="configurable.group.appearance" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Project management/project/CV_analyzer_client" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\FarmerBazaarClient\bower_components" />
       <recent name="D:\ASP.NET\CV-Analyzer\CV_analyzer_client\bower_components" />
       <recent name="D:\ASP.NET\CV-Analyzer\CV_analyzer_client\app\partial_views" />
       <recent name="F:\webstorm projects\CV_analyzer_client\app" />
@@ -384,16 +354,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/partial_views/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partial_views/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partial_views/page_not_found.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -406,17 +366,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/top-bottom-padding.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partial_views/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
+    <entry file="file://$PROJECT_DIR$/app/partial_views/signin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
@@ -444,16 +399,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
+    <entry file="file://$PROJECT_DIR$/app/services/remote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+        <state line="30" column="20" selection-start="914" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1003">
+          <folding>
+            <element signature="n#!!block;n#DummyRemote#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-file-upload/angular-file-upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22678">
+          <folding>
+            <marker date="1429978274000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
@@ -465,25 +431,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/remote.js">
+    <entry file="file://$PROJECT_DIR$/app/services/auth-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="914" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1003">
+        <state line="15" column="0" selection-start="368" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/uuid-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="91" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <folding>
-            <element signature="n#!!block;n#DummyRemote#0" expanded="false" />
+            <element signature="e#0#40#0" expanded="false" />
+            <marker date="1448674555655" expanded="true" signature="67:600" placeholder="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/auth-service.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="1232" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="341" max-vertical-offset="1139">
+        <state line="46" column="71" selection-start="1852" selection-end="1852" vertical-scroll-proportion="-12.961538" vertical-offset="445" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partial_views/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-20.153847" vertical-offset="530" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/auth-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="4" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.9417808" vertical-offset="555" max-vertical-offset="1207">
+        <state line="76" column="4" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.9404553" vertical-offset="755" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 /**
  * Created by Anik 0422 on 10/25/15.
  */
-var app = angular.module("app", ['ui.router']);
+var app = angular.module("app", ['ui.router', 'angularFileUpload']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 

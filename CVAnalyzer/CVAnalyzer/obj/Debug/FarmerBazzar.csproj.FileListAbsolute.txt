@@ -15,9 +15,8 @@ E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CV
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\System.Web.Http.xml
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\System.Web.Http.Cors.xml
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\bin\System.Web.Http.WebHost.xml
+E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.Migrations.ProductAndRatingModelAdded.resources
+E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.Migrations.DatabaseUpdated.resources
+E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csproj.GenerateResource.Cache
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.dll
 E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.pdb
-E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csproj.GenerateResource.Cache
-E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.Migrations.ProductAndRatingModelAdded.resources
-E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\FarmerBazzar.csprojResolveAssemblyReference.cache
-E:\BSSE Program\8th semester BSSE program\SUST Carnival\final day\IITDU.SIUSC\CVAnalyzer\CVAnalyzer\obj\Debug\CVAnalyzer.Migrations.DatabaseUpdated.resources
