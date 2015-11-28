@@ -38,8 +38,8 @@ namespace CVAnalyzer.Controllers
                                   Subcategory = productViewModel.Subcategory
                               };
             var productId = _productService.AddProduct(product);
-            var productAddResViewModel = new ProductAddResViewModel { ProductId = productId };
-            return Ok(productAddResViewModel);
+           // var productAddResViewModel = new ProductAddResViewModel { ProductId = productId };*/
+            return Ok(GetProductResViewModel(product));
         }
 
         [Route("product/get")]

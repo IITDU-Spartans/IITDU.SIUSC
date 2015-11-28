@@ -6,4 +6,5 @@ app.controller("ProductDetailController", ["$scope", "$stateParams", function($s
     $scope.product = {};
     $scope.product = $stateParams.product;
 
+
 }]);

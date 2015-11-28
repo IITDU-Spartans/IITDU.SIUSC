@@ -3,13 +3,12 @@
  */
 app.controller("ProductController", ['$scope', '$state', 'productService', function($scope, $state, productService){
 
-    $scope.Pagination = {};
-    $scope.Pagination.Page = 0;
-    $scope.Pagination.Size = 2;
-    $scope.Rating = 4;
+
+    $scope.Rating = 0;
     $scope.addProduct = function (product) {
         productService.addProduct(product).success(function (response) {
             toastr.success("Your product is successfully added.");
+            //console.log(response);
             $state.go("getproduct", {product: response});
         }).error(function (response) {
             toastr.error("Server error. Please try again.");
@@ -31,20 +30,30 @@ app.controller("ProductController", ['$scope', '$state', 'productService', funct
     };
 
 
+    $scope.Pagination = {};
+    $scope.Pagination.Page = 0;
+    $scope.Pagination.Size = 4;
+    $scope.products = [];
     $scope.getProducts = function () {
-        $scope.Pagination.Page++;
-        $scope.products = {};
-        $scope.products = productService.getProducts($scope.Products);
+        //$scope.Pagination.Page++;
+
+        //$scope.products = productService.getProducts($scope.Products);
         //console.log($scope.products);
-        /*productService.getProducts($scope.Pagination).success(function (response) {
-            $scope.products = response;
+        productService.getProducts($scope.Pagination).success(function (response) {
+            for(var i=0;i<response.length; i++){
+                $scope.products.push(response[i]);
+            }
+            //$scope.products.push(response);
+            console.log($scope.products);
 
         }).error(function (response) {
             toastr.error("Server error");
-        });*/
+        });
     };
-    
+    $scope.getProducts();
+
     $scope.Rate = function () {
+        alert($scope.Rating);
         var rating = {};
         var productId = $scope.product.ProductId;
         rating.FarmerId = $window.localStorage.farmerId;

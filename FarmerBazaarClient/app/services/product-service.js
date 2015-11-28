@@ -5,9 +5,9 @@ app.service('productService', ['remote', 'authService', function (remote, authSe
 
     this.addProduct = function (product) {
         product.FarmerId = authService.getFarmerId();
-        if(!product.FarmerId){
+        /*if(!product.FarmerId){
             toastr.warning("Please login first.");
-        }
+        }*/
         return remote.addProduct(product);
     };
 
@@ -17,8 +17,8 @@ app.service('productService', ['remote', 'authService', function (remote, authSe
         return remote.getProductByProductId(product);
     };
 
-    this.getProducts = function () {
-        var pagination = {};
+    this.getProducts = function (pagination) {
+
         return remote.getProducts(pagination);
     };
 

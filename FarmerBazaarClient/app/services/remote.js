@@ -56,8 +56,8 @@ function Remote($http, $window, serverUrl) {
         console.log("Pagination");
         console.log(productPagination);
         var url = serverUrl + "product/getall";
-        return products;
-        //return $http.post(url, productPagination);
+        //return products;
+        return $http.post(url, productPagination);
     };
     this.addRating = function (ratingModel) {
         console.log(ratingModel);
